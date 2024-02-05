@@ -1,5 +1,5 @@
-let listContainer; // Declare listContainer globally
-let input; // Declare input globally
+let listContainer; 
+let input; 
 
 document.addEventListener("DOMContentLoaded", renderDOM);
 
@@ -39,7 +39,7 @@ function renderDOM() {
 
     addbutton.addEventListener('click', addTask);
 
-    // Trigger addTask function on Enter key press in the input field
+   
     input.addEventListener('keyup', (event) => {
         if (event.key === 'Enter') {
             addTask();
@@ -48,7 +48,6 @@ function renderDOM() {
 
     listContainer.addEventListener('click', func);
 
-    // Call the data function to load stored tasks when the page loads
     data();
 }
 
