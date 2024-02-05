@@ -1,3 +1,4 @@
+const style = `
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
 *{
     margin: 0;
@@ -85,3 +86,10 @@ ul li span{
     line-height: 40px;
     text-align: center;
 }
+`;
+
+
+const styleElement = document.createElement('style')
+styleElement.type = 'text/css'
+styleElement.appendChild(document.createTextNode(style))
+document.head.appendChild(styleElement)
