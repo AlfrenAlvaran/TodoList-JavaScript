@@ -47,7 +47,9 @@ function renderDOM() {
     });
 
     listContainer.addEventListener('click', func);
-
+    document.addEventListener('keydown', () => {
+        input.focus();
+    });
     data();
 }
 
